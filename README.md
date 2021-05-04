@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/clipboard-landing-page-using-html-and-css-9SFNSblda](https://www.frontendmentor.io/solutions/clipboard-landing-page-using-html-and-css-9SFNSblda)
+- Live Site URL: [https://tempatportofolio.github.io/Clipboard-Landing-Page/](https://tempatportofolio.github.io/Clipboard-Landing-Page/)
 
 ## My process
 
