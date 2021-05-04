@@ -1,0 +1,435 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/* UNIVERSAL CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.btn {
+    outline: none;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    margin: 0 .2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    opacity: .7;
+    transition: ease-out .2s;
+}
+
+.ios-btn {
+    background: var(--strongCyan);
+}
+
+.mac-btn {
+    background: var(--lightBlue);
+}
+
+.section-title {
+    color: var(--darkGrayfishBlue);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.section-caption {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1.5rem 0 1rem 0;
+    color: var(--grayFishBlue);
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 1rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 6rem 0 2rem 0;
+    position: relative;
+}
+
+/* CSS VARIABLE */
+:root {
+    /* Color */
+    --strongCyan: hsl(171, 66%, 44%);
+    --lightBlue: hsl(233, 100%, 69%);
+    --darkGrayfishBlue: hsl(210, 10%, 33%);
+    --grayFishBlue: hsl(201, 11%, 66%);
+}
+
+
+/* HEADER */
+section.header {
+    padding: 6rem 0;
+    height: auto;
+    background: url(../images/bg-header-desktop.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+section.header img {
+    padding: 2rem 0 3rem 0;
+}
+
+section.header h1.main-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--darkGrayfishBlue);
+}
+
+section.header div {
+    padding: 1rem 0;
+}
+
+
+/* TRACK SECTION */
+section.track {
+    padding: 2rem 0 1rem 0;
+    position: relative;
+    height: 1000px;
+    text-align: center;
+}
+
+section.track .grid-2 .pc {
+    position: relative;
+}
+
+section.track .grid-2 .pc img {
+    position: absolute;
+    display: block;
+    left: -40px;
+    top: 0;
+}
+
+section.track .grid-2 .info-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    height: 500px;
+}
+
+section.track .grid-2 .info-section div {
+    margin: 1.1rem 0;
+}
+
+section.track .grid-2 .info-section div h3 {
+    color: var(--darkGrayfishBlue);
+    padding: .8rem 0;
+    font-weight: 600;
+}
+
+section.track .grid-2 .info-section div p {
+    width: 350px;
+    font-size: 16px;
+    line-height: 35px;
+    color: var(--grayFishBlue);
+    font-weight: 400;
+}
+
+/* CLIPBOARD SECTION */
+section.clipboard {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section.clipboard img {
+    margin: 6rem 0 4rem 0;
+}
+
+/* WORKFLOW SECTION */
+section.workflow {
+    text-align: center;
+}
+
+section.workflow .main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 420px);
+    margin: 0 auto;
+    justify-content: center;
+    padding: 4.5rem 0 2rem 0;
+}
+
+section.workflow .main-grid div img {
+    height: 33px;
+    margin: 0 0 1rem 0;
+}
+
+section.workflow .main-grid div h3.logo-title {
+    padding: 1.4rem 0;
+    color: var(--darkGrayfishBlue);
+}
+
+section.workflow .main-grid div p.logo-caption {
+    margin: 0 auto;
+    width: 390px;
+    line-height: 30px;
+    font-size: 1.1rem;
+    color: var(--grayFishBlue);
+}
+
+section.workflow .logo {
+    padding: 6rem 0 10rem 0;
+}
+
+section.workflow .logo img {
+    margin: 0 4rem;
+}
+
+/* CLIPBOARD SECTION */
+section.clipboard div {
+    padding: 2rem 0 6rem 0;
+}
+
+/* FOOTER SECTION */
+section.footer {
+    padding: 2rem 0;
+    height: 130px;
+    background-color: #f5f6f8;
+}
+
+section.footer .footer-grid {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+section.footer .footer-grid .logo-footer {
+    text-align: center;
+    width: 100%;
+}
+
+section.footer .footer-grid .logo-footer img {
+    width: 18%;
+}
+
+section.footer .footer-grid .links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section.footer .footer-grid .links a {
+    text-align: left;
+    font-size: .9rem;
+    color: var(--grayFishBlue);
+    font-weight: 600;
+    width: 100px;
+    margin: .5rem 0;
+}
+
+section.footer .footer-grid .social-media {
+    text-align: center;
+}
+
+section.footer .footer-grid .social-media a {
+    margin: 0 10px;
+}
+
+section.footer .footer-grid .social-media a img {
+    width: 20px;
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 1440px) {
+    .grid-2 {
+        grid-template-columns: 60% 40%;
+    }
+}
+
+
+/* MOBILE VERSION */
+
+@media only screen and (max-width: 375px) {
+
+    body {
+        overflow: scroll;
+    }
+
+    section.header {
+        padding: 6rem 0;
+        margin: 0 auto;
+        background: url(../images/bg-header-mobile.png) no-repeat;
+        background-size: cover;
+        text-align: center;
+
+    }
+
+    section.header img {
+        width: 30%;
+    }
+
+    section.header h1.main-title {
+        font-size: 1.8rem;
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .section-caption {
+        width: 277px;
+        color: var(--grayFishBlue);
+        font-weight: 400;
+        line-height: 24px;
+        font-size: .9rem;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+        display: block;
+        margin: 0 auto 2rem auto;
+        width: 80%;
+    }
+
+    section.track {
+        padding: 0 0 1rem 0;
+        height: 1000px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        color: var(--darkGrayfishBlue);
+        font-size: 1.5rem;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    section.track .grid-2 .pc img {
+        display: block;
+        position: unset;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    section.track .grid-2 .pc {
+        padding: 2rem 0 1rem 0;
+    }
+
+    .grid-2 {
+        display: block;
+        padding: 0;
+    }
+
+    section.track .grid-2 .info-section {
+        display: block;
+        text-align: center;
+        height: auto;
+    }
+
+    section.track .grid-2 .info-section div {
+        margin: 1.1rem 0 1.5rem 0;
+    }
+
+    section.track .grid-2 .info-section div h3 {
+        padding: .9rem 0 .6rem 0;
+    }
+
+    section.track .grid-2 .info-section div p {
+        width: 280px;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0 auto;
+    }
+
+    section.clipboard {
+        text-align: center;
+        padding: 2.3rem 0;
+    }
+
+    section.clipboard img {
+        margin: 3rem 0 2rem 0;
+        width: 90%;
+    }
+
+    section.workflow .main-grid {
+        display: block;
+        padding: 3.5rem 0 2rem 0;
+    }
+
+    section.workflow .main-grid div h3.logo-title {
+        padding: 1.1rem 0;
+    }
+
+    section.workflow .main-grid div p.logo-caption {
+        width: 290px;
+        line-height: 24px;
+        font-size: .9rem;
+        color: var(--grayFishBlue);
+    }
+
+    section.workflow .main-grid div {
+        margin: 0 0 3rem 0;
+    }
+
+    section.workflow .logo {
+        padding: 1rem 0 4rem 0;
+    }
+
+    section.workflow .logo img {
+        margin: 2rem auto 3rem auto;
+        width: 125px;
+        display: block;
+
+    }
+
+    section.clipboard div {
+        padding: 2rem 0 4rem 0;
+    }
+
+    section.footer {
+        padding: 2rem 0;
+        height: auto;
+        background-color: #f5f6f8;
+    }
+
+    section.footer .footer-grid {
+        display: block;
+    }
+
+    section.footer .footer-grid .logo-footer img {
+        width: 15%;
+        padding: 1rem 0;
+    }
+
+    section.footer .footer-grid .links {
+        display: block;
+    }
+
+    section.footer .footer-grid .links a {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        font-weight: 400;
+        padding: .8rem 0;
+        font-size: 1rem;
+    }
+
+    section.footer .footer-grid .social-media {
+        padding: 2rem 0 0 0;
+    }
+
+}
